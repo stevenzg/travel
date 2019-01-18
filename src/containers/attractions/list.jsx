@@ -16,20 +16,19 @@ class AttractionList extends Component {
     }
   }
 
-  async componentDidMount() {
-    fetch(
-      'https://travel-server-api.davidc.ai/attractions?token=10ktfn&limit=20&skip=0'
-    )
-      .then(response => response.json())
-      .then(json => this.setState({ attractions: json }))
-  }
+  // async componentDidMount() {
+  //   fetch(
+  //     'https://travel-server-api.davidc.ai/attractions?token=10ktfn&limit=20&skip=0'
+  //   )
+  //     .then(response => response.json())
+  //     .then(json => this.setState({ attractions: json }))
+  // }
 
   elementInfiniteLoad() {
     return <div className="infinite-list-loading">正在加载....</div>
   }
 
   handleInfiniteLoad = () => {
-    skip += 10
     this.setState({
       isInfiniteLoading: true
     })
@@ -45,6 +44,7 @@ class AttractionList extends Component {
         this.setState({
           isInfiniteLoading: false
         })
+        skip += 10
       })
   }
 
