@@ -4,4 +4,19 @@
 
 .name {
   margin-bottom: 10px;
+  color: #41464b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 10px;
+  color: #41464b;
+  font-size: 14px;
+}
+
+.detail {
+  color: #41464b;
+  margin-top: 20px;
+  /* font-size: 14px; */
 }

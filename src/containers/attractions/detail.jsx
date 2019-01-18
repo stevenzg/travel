@@ -26,6 +26,14 @@ class AttractionDetail extends Component {
     return (
       <div className="attraction-detail">
         <div className="name">{attraction.name}</div>
+        <div className="info">
+          Category: {attraction.category}, {attraction.subCategory}
+        </div>
+        <div className="info">Hours: {attraction.hours}</div>
+        <div className="info">Address: {attraction.address}</div>
+        <div className="info">Phone: {attraction.phone}</div>
+        <div className="info">Price: {attraction.price}</div>
+        <div className="info">Website: {attraction.website}</div>
         <div
           className="detail"
           dangerouslySetInnerHTML={{ __html: attraction.detail }}

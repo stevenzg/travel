@@ -59,11 +59,13 @@ class AttractionList extends Component {
       )
     })
 
+    const containerHeight = window.innerHeight
+
     // return <div>{AttractionsComp}</div>
 
     return (
       <Infinite
-        containerHeight={600}
+        containerHeight={containerHeight}
         elementHeight={40}
         infiniteLoadBeginEdgeOffset={580}
         onInfiniteLoad={this.handleInfiniteLoad}
