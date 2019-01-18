@@ -25,7 +25,7 @@ class AttractionList extends Component {
   }
 
   elementInfiniteLoad() {
-    return <div className="infinite-list-item">正在加载....</div>
+    return <div className="infinite-list-loading">正在加载....</div>
   }
 
   handleInfiniteLoad = () => {

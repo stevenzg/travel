@@ -14,7 +14,10 @@ class AttractionDetail extends Component {
     const { id } = this.props.match.params
     fetch(`https://travel-server-api.davidc.ai/attractions/${id}?token=10ktfn`)
       .then(response => response.json())
-      .then(json => this.setState({ attraction: json }))
+      .then(json => {
+        document.title = json.name
+        this.setState({ attraction: json })
+      })
   }
 
   render() {

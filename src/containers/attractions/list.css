@@ -1,3 +1,10 @@
 .attraction-item {
   padding: 20px;
+  text-align: center;
+}
+
+.infinite-list-loading {
+  text-align: center;
+  color: #41464b;
+  padding: 20px;
 }
